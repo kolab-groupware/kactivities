@@ -63,12 +63,6 @@ namespace details {
         return qt_find_if_assoc(c.constBegin(), c.constEnd(), f);
     }
 
-    template <typename Container, typename Function>
-    Function _find_if_assoc_helper_container(const Container & c, Function f,
-            decltype(&Container::cbegin) * )
-    {
-        return stl_find_if_assoc(c.cbegin(), c.cend(), f);
-    }
 
 } // namespace details
 

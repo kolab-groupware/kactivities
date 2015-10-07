@@ -59,13 +59,6 @@ Function _for_each_assoc_helper_container(const Container & c, Function f,
     return qt_for_each_assoc(c.constBegin(), c.constEnd(), f);
 }
 
-template <typename Container, typename Function>
-Function _for_each_assoc_helper_container(const Container & c, Function f,
-        decltype(&Container::cbegin) * )
-{
-    return stl_for_each_assoc(c.cbegin(), c.cend(), f);
-}
-
 } // namespace details
 
 template <typename Container, typename Function>

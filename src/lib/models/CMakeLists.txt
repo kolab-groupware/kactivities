@@ -119,7 +119,7 @@ kde4_add_library (
     )
 
 kde4_add_library (
-    kactivities-models-component-plugin SHARED
+    kactivities-models-component-plugin MODULE
     ${kactivities-models-component_LIB_SRCS}
     )
 
